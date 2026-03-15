@@ -84,6 +84,10 @@ HarmonyOS hdc 工具的 MCP（Model Context Protocol）服务，让 AI 助手直
 | `HDC_PATH` | 自动探测 | hdc 可执行文件绝对路径 |
 | `HDC_TIMEOUT` | `30` | 命令执行超时秒数 |
 
+## 详细文档
+
+- [使用说明](docs/usage.md) — 全部 24 个工具的参数、用法和常见场景示例
+
 ## 开发
 
 ```bash
