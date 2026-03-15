@@ -67,7 +67,8 @@ class TestHdcTargetMode:
 
     def test_invalid_mode_raises(self):
         result = hdc_target_mode(mode="invalid")
-        assert "错误" in result or "invalid" in result
+        assert "错误" in result
+        assert "invalid" in result
 
 
 class TestHdcSmode:

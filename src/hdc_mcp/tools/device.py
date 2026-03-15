@@ -47,7 +47,7 @@ def hdc_target_disconnect(address: str | None = None) -> str:
         断开结果字符串
     """
     args = ["tdisconn"]
-    if address:
+    if address is not None:
         args.append(address)
     return format_result(run(args))
 
@@ -62,7 +62,7 @@ def hdc_target_reboot(serial: str) -> str:
     返回:
         重启结果字符串
     """
-    return format_result(run(["-t", serial, "target", "boot"]))
+    return format_result(run(serial_prefix(serial) + ["target", "boot"]))
 
 
 def hdc_target_mode(mode: str) -> str:
