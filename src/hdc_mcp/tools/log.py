@@ -58,7 +58,7 @@ def hdc_hilog(
         args += ["-t", tag]
     if domain:
         args += ["-D", domain]
-    if level:
+    if level is not None:
         args += ["-l", level.upper()]
     if pid is not None:
         args += ["-P", str(pid)]

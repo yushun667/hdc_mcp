@@ -16,7 +16,7 @@ class TestGetHdcPath:
         """HDC_PATH 环境变量优先级最高，即使该路径存在也应直接返回。"""
         fake_hdc = tmp_path / "hdc"
         fake_hdc.touch()
-        with patch.dict(os.environ, {"HDC_PATH": str(fake_hdc)}):
+        with patch.dict(os.environ, {"HDC_PATH": str(fake_hdc)}, clear=True):
             assert get_hdc_path() == str(fake_hdc)
 
     def test_env_var_not_set_falls_back_to_platform(self, tmp_path):

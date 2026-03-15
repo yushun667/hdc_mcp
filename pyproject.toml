@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "MCP server for HarmonyOS hdc (HarmonyOS Device Connector) tool"
 readme = "README.md"
 license = { text = "MIT" }
-authors = [{ name = "Your Name", email = "your@email.com" }]
+authors = [{ name = "hdc-mcp contributors", email = "hdc-mcp@users.noreply.github.com" }]
 requires-python = ">=3.10"
 dependencies = ["mcp[cli]"]
 keywords = ["mcp", "hdc", "harmonyos", "openharmony", "devtools"]
